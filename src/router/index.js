@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import ConvertView from "@/views/ConvertView.vue";
-import CoursesView from "@/views/CoursesView.vue";
+import CurrenciesPriceView from "@/views/CurrenciesPriceView/CurrenciesPriceView.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -15,9 +15,9 @@ const router = createRouter({
       component: ConvertView
     },
     {
-      path: "/courses",
-      name: "courses",
-      component: CoursesView
+      path: "/currency-price",
+      name: "currency-price",
+      component: CurrenciesPriceView
     }
   ]
 });

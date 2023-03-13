@@ -13,6 +13,9 @@ export default defineConfig({
       scss: {
         additionalData:
           `@import "./src/assets/styles/_variables.scss";`
+      },
+      less: {
+        javascriptEnabled: true
       }
     }
   }

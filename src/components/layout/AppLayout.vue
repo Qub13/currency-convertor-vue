@@ -20,22 +20,24 @@ export default {
 
 <style lang="scss">
 .app-layout {
-  max-width: 500px;
-  width: 90%;
-  min-width: 300px;
-  max-height: 600px;
-  height: 100%;
+
+  width: 80vw;
+  min-width: 350px;
+  max-height: calc(100vh - 30%);
+  overflow: auto;
+  margin: 0 auto;
+  position: relative;
   background-color: #ffffff;
 
   box-shadow: 0 0 22.2286px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  .app-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  overflow: scroll;
-
+    height: 400px;
+  }
 }
 </style>
